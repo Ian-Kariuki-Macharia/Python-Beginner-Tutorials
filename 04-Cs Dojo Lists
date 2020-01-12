@@ -1,0 +1,39 @@
+a = [3,10,-1]
+print(a)
+a.append(1)
+print(a)
+# append is a pre-defined function
+a.append("hello")
+print(a)
+a.append([1,2])
+print(a)
+a.pop()
+print(a)
+#pop to remove last item
+a.pop()
+print(a)
+# retrieve a specific item
+print(a[0])
+b = a[3]
+print(b)
+
+# changing contents of the list
+a[0] = 100
+print(a)
+# Exercise problem
+# swapping items on a list
+c = ["banana","apple","microsoft"]
+temp = c[0]
+c[0] = c[2]
+c[2] = temp
+print(c)
+# swapping shortcut
+c[0],c[2] = c[2],c[0]
+print(c)
+
+
+
+
+
+
+

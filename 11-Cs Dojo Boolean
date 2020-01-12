@@ -1,0 +1,50 @@
+# Boolean = A type of data
+# Used to express if a certain logical condition is True of False
+print(type(True))
+
+# use case of a boolean value
+a = 3
+b = 1
+if a > b:
+    print("a is greater than b")
+# similar to
+if True:
+    print("a is greater than b")
+
+# storing a boolean value in a variable
+boolean_value = a>b
+print(boolean_value)
+if boolean_value:
+    print("a is greater than b")
+
+#When to use boolean values
+# when doing complex logical operations
+def are_you_sad(is_rainy,has_umbrella):
+    if is_rainy == True and has_umbrella == False:
+        return True
+    else:
+        return False
+print(are_you_sad(True,False))
+print(are_you_sad(False,True))
+
+# Exercise problem
+def c_greater_than_d_plus_e(c,d,e):
+    return c > d+e # return True
+        
+ 
+print(c_greater_than_d_plus_e(5,2,1))
+print(c_greater_than_d_plus_e(6,4,3))
+
+
+
+
+
+
+
+
+
+
+
+
+
+

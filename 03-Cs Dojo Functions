@@ -1,0 +1,120 @@
+# A collection of instructions
+# A collection of code
+# pound sign to explain
+def func1():
+    print("I just defined a function")
+    print("A function as a collection of 2 lines code")
+func1() # calling the function
+print("A normal print statement outside the function")
+# Re-using functions
+func1()
+# A funcion as a mapping
+def func2(a):
+    return a*2
+# Mapping input a to output a*2
+print(func2(5))
+b = func2(3)
+print(b)
+# 6 is the return value/output
+def func3 (c,d):
+    return c + d
+e = func3(4,5)
+print(e)
+print("------------")
+# Combining functions as a mapping and as a collection of code
+def func4(f):
+    print(f)
+    print(str(f) + " is the input to be mapped to output f*3")
+    # To be printed each time the function is called
+    return f*3
+g = func4(10)
+print(g)
+print("------------")
+print(func4(12))
+print("------------")
+def func5(parameter):
+    print(parameter)
+    print("Argument added when calling the function")
+func5(7)
+print("------------")
+# BMI calculator
+name1 = "Ian"
+height_m1 = 1.88
+weight_kg1 = 65
+
+name2 = "Bernice"
+height_m2 = 1.55
+weight_kg2 = 52
+
+name3 = "Brian"
+height_m3 = 1.87
+weight_kg3 = 100
+
+optimal_weight = list()
+for nos in range(20,26):
+    optimal_weight.append(nos)
+
+def BMI(name,height_m,weight_kg):
+    bmi = int(weight_kg/(height_m**2))
+    #return bmi
+    for num in optimal_weight:
+        if bmi == num:
+            print( name + " has optimal weight")
+        else:
+            if bmi < 20:
+                print(name + " is underweight")
+                break
+            elif bmi > 25:
+                print(name + " is overweight")
+                break
+             
+
+Ian = BMI(name1,height_m1,weight_kg1)
+Bernice = BMI(name2,height_m2,weight_kg2)
+Brian = BMI(name3,height_m3,weight_kg3)
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+

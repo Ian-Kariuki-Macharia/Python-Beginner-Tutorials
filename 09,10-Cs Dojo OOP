@@ -1,0 +1,61 @@
+optimum = list(range(18,26))
+print(optimum)
+
+class Robot:
+    def __init__(self,name,colour,weight,height):
+        self.name = name
+        self.colour = colour
+        self.weight = weight
+        self.height = height
+    def introduce_self(self):
+        print("My name is " + self.name)
+    def robot_BMI(self):
+        bmi = (int(self.weight / (self.height**2)))
+        if bmi < 20 :
+            print(self.name + " is underweight")
+        elif bmi > 25:
+            print(self.name + " is overweight")
+                        
+        else:
+            for nums in optimum:
+                if bmi == nums:
+                    print(self.name + " has optimal weight")
+                    break
+                
+
+robot1 = Robot("Ian","black",66,1.88)
+robot2 = Robot("Brian","dark",78,1.88)
+robot3 = Robot("Bernice", "verydark",52,1.52)
+robot4 = Robot("Ruby","Light",50,1.68)
+robot5 = Robot("Mercy","dark",57,1.5)
+robot1.introduce_self()
+robot2.introduce_self()
+robot3.introduce_self()
+print("----------")
+robot1.robot_BMI()
+robot2.robot_BMI()
+robot3.robot_BMI()
+robot4.robot_BMI()
+robot5.robot_BMI()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

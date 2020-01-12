@@ -1,0 +1,22 @@
+# IDE - Integrated Development Environment
+print ("Hello world")
+print('Another string')
+print(3)
+a = 1
+# Variable a stores int 1 (Not technically accurate)
+# Variable a refers to/points at int 1(Technically accurate)
+b = 2
+print(b)
+# Variable can refer to any data type
+d = 2
+print(d)
+# Possible for two variables to point at same value
+b = 1
+print(b)
+#Possible to re-assign a variable to another value
+f = b
+print(f)
+b = 4
+print(b)
+print(f)
+#Variable f remains pointing to value 1 even after Variable b was re-assigned to 4

@@ -1,0 +1,53 @@
+# To recap
+sum = 0
+for no in range (1,11):
+    sum = sum + no
+print(sum)
+
+# Achieve above using a while loop
+total = 0
+no = 0
+while no < 11:
+    total = total + no
+    no = no + 1
+print(total)
+# Useful when one does not know
+# No. of loops needed before hand
+given_list = [5,4,4,3,1,-2,-3,-5]
+# difficult to tell the no of loops needed for only +ve nos
+sum_positives = 0
+item_list = 0
+while given_list[item_list] > 0:
+    sum_positives = sum_positives + given_list[item_list]
+    item_list = item_list + 1
+
+print(sum_positives)
+print(item_list) 
+
+fav_nos = [100,98,96,94,92,92,88,86,84,82,80]
+sum_fav = 0
+actual_nos = 0
+while fav_nos[actual_nos] > 88:
+    sum_fav = sum_fav + fav_nos[actual_nos]
+    actual_nos = actual_nos + 1
+print(actual_nos)
+print(sum_fav)
+
+
+total_favs = 0
+numof_favs = 0
+for no in fav_nos:
+    if no > 88:
+        total_favs = total_favs + no
+        numof_favs = numof_favs + 1
+print(total_favs)
+print(numof_favs)
+
+
+
+
+
+
+
+
+

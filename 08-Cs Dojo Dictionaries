@@ -1,0 +1,47 @@
+# Dictionaries in python == A look up table
+# Dictionaries == key : values pairs
+d = {}
+# d is an empty dictionary
+d = dict()
+# Another way of creating an empty dictionary
+d["Ian"] = 22
+d["Brian"] = 21
+d["Bernice"] =21
+print(d)
+print(d["Brian"])
+
+# Changing the value associated with a given key
+d["Ian"] = 23
+print (d)
+d[10] = 100
+print(d[10])
+print(d)
+
+#Iterating through key:value pairs python dictionary
+for key,value in d.items():
+    print("key :")
+    print(key)
+    print("value :")
+    print(value)
+    print("-----------")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+a = ["banana","apple","microsft"]
+# To iterate through each of item in list
+for items in a:
+    print(items)
+# print each item of list
+print (a[0])
+b = [20,10,5]
+for nums in b:
+    print(nums)
+# sum of nums in list
+total = 0
+for nums in b:
+    total = total + nums
+    print(total)
+print(total)
+# sum of nos ranging 1,4
+a = range(1,5)
+sum = 0
+for no in a:
+    sum = sum + no
+    print(sum)
+print(sum)
+sum_total = 0
+for nos in range (20,31,5):
+    sum_total = sum_total + nos
+    print(sum_total)
+print(sum_total)
+
+print(list(range(1,8)))
+# to find the sum of only the multiples of 3
+sum_multiples = 0
+for digs in range(1,8):
+    if digs % 3 == 0:
+        sum_multiples = sum_multiples + digs
+        print(sum_multiples)
+print(sum_multiples)
+
+# Exercise task
+# compute sum of all multiples of 3,5 less than 100
+total_multiples = 0
+for multiple in range(1,100):
+    if multiple % 3 == 0 or multiple % 5 == 0:
+        total_multiples = total_multiples + multiple
+        print(total_multiples)
+print(total_multiples)        
+
+
+
+
+
+
+
+

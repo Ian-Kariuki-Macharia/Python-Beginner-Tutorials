@@ -1,0 +1,119 @@
+a = ["apple","banana","republic"]
+for names in a:
+    print(names)
+for nums in range (3):
+    print(nums)
+
+# printing out items in a list using indexes
+print(a[0])
+print(a[1])
+print(a[2])
+print("------------")
+# Printing out a no. of items in a list using range and for loop
+#print the first two items from the list a
+for items in range(2):
+    print(a[items])
+print ("-----------")
+for items in range(len(a)):
+    print(a[items])
+print ("-----------")
+# The index matters, not just the element
+# example - To print apple once,banana twice & republic thrice
+for items in range(len(a)):
+    for elements in range (items + 1):
+        #items = 0 -> elements = o
+        #go through inner for loop once
+        #items = 1 -> elements = 0,1
+        #go through inner for loop twice
+        #items = 2 -> elements = 0,1,2
+        #go through inner for loop 3 times
+        print(a[items])
+
+# Previous exercise problems
+a = list(range(100))
+print (a)
+total_multiple = 0
+multiple = 0
+for num in a:
+    if num % 3 == 0 or num % 5 == 0:
+        total_multiple = total_multiple + num
+        multiple = multiple + 1
+print(total_multiple)
+print(multiple)
+
+# Exercise 2
+#Find sum of only the -ve nos
+negatives = 0
+total_negatives = 0
+new_list = [7,5,4,4,3,1,-2,-3,-5,-7]
+#initialize an index
+j = len(new_list) - 1 #gives last item on list to the right
+while new_list[j] < 0:
+    total_negatives = total_negatives + new_list[j]
+    j = j -1
+print(total_negatives)
+print(j)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+a = 1 
+b = 2
+if a < b:
+    print("a is less than b")
+    print("Def a is less than b")
+else:
+    print("a is not less than b")
+    print("I dont think  a is less than b")
+print("This is outside the if clause")
+
+
+c = 7 
+d = 4
+if c < d:
+    print("c is less than d")
+    print("Def c is less than d")
+else:
+    print("c is not less than d")
+    print("I dont think  c is less than d")
+print("This is outside the if clause")
+
+# Dealing with 3 cases and not just two
+# less than,equal to, greater than
+e = 19
+f = 8
+if e < f:
+    print("e is less than f")
+elif e == f:
+    print("e is equal to f")
+elif e > f + 10:
+    print("e is greater than f by more than 10")
+else:
+    print("e is greater than f")
+
+
+# Dealing with 3 cases and not just two
+# Without using elif
+g = 9
+h = 8
+if g < h:
+    print("g is less than h")
+else:
+    if g == h:
+        print("g is equal to h")
+    else:
+        print("g is greater than h")
+
+# A simple BMI calculator
+#name = "Ian"
+#height_m = 1.88
+#weight_kg = 65
+
+name = "Bernice"
+height_m = 1.55
+weight_kg = 52
+
+#name = "Brian"
+#height_m = 1.87
+#weight_kg = 75
+optimal_weight = list()
+for a in range(20,26):
+    optimal_weight.append(a)
+    print(a)
+print(optimal_weight)
+
+bmi = int(weight_kg / (height_m**2))
+
+for nums in optimal_weight:
+    #print(nums)
+    if bmi == nums:
+        print(name + " has optimal weight")
+
+    
+if bmi < 20:
+    print(name + " is underweight")
+elif bmi > 25:
+    print(name + " is overweight") 
+
+print(65/(1.88**2))
+print(52/(1.55**2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
